@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    border: 0;
+    background-color: black;
+}
+:root{
+    --SizeOfH_Pic: 20%;
+}
+.Header{
+    background-color: #3d3d3d;
+    width:100%;
+    height:10vh;
+    flex-wrap:wrap;
+    display: flex;
+}
+
+.Header > div{
+    height:100%;
+}
+
+.H_Pic{
+    background-image: url("../_img/VR logo.png");
+    background-size: auto 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:var(--SizeOfH_Pic);
+    min-width: 100px;
+}
+.H_Navigation{
+    display: flex;
+    margin: none;
+    align-items:center ;
+    justify-content: center;
+    width:60%;
+}
+.H_Navigation > button{
+    margin-top: calc(10vh / 2 - 5vh);
+    min-width: 70px;
+    min-height: 20px;
+    width:10vw;
+    height: 5vh;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: none;
+    font-size: 2vh;
+    font-family: 'Courier New', monospace;
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+}
+.H_Navigation > button:hover{
+    color:#7f0088;
+}
+.H_Navigation > button:active{
+    margin-top: calc(10vh / 2 - 3vh);
+    transition: 0.3s;
+}
+.Block{
+    width: var(--SizeOfH_Pic);
+    height: 100%;
+}
+
+
+/* ABOVE IS THE NAVIGATION BAR */
+.mainBody{
+    padding-right: 5%;
+    padding-left: 5%;
+    animation-name: ShowWebPageOnLoad;
+    animation-duration: 2s;
+
+}
+
+h1{
+    font-size: 7vh;
+    text-transform: capitalize ;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    width:100%;
+    text-align: center;
+}
+
+@keyframes ShowWebPageOnLoad{
+    0%{
+        opacity: 0%;
+        margin-top: 5%;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0%;
+    }
+}
+
+p{
+    color:white;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* TESTING ANIMATION FOR RAINBOW*/
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+/* END TESTING ANIMATION FOR RAINBOW*/
+
+.FlexBox_Property{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+.FlexBox_Property > div{
+    margin-top: 1%;
+    margin-left: 0.2%;
+    margin-right:0.2% ;
+    min-width: 300px;
+    min-height: 300px;
+    color: white;
+    max-width: 700px;
+    width:35vw;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.PictureDiv_Class{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#Picture_Fullscreen{
+    width:90vw;
+    height: 90vh;
+    position: fixed;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: none;
+    animation-name: LoadOfFullScreenPic;
+    animation-duration: 0.4s;
+    margin:5%;
+    margin-top: 2%;
+    z-index: 2;
+}
+
+@keyframes LoadOfFullScreenPic{
+    0%{
+        margin-top:7%;
+        opacity: 0%;
+    }
+    100%{
+        margin-top:2%;
+        opacity: 100%;
+    }
+}
+
+.Sub_Title_H1{
+    font-size: 4vh;
+    border-bottom: whitesmoke 3px solid;
+}
+
+/* Footer */
+
+.Footer{
+    background-color: #270e25;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+}
+.Footer > div{
+    --MarginDiff_Footer:6%;
+    margin-left: var(--MarginDiff_Footer);
+    margin-right: var(--MarginDiff_Footer);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* END Footer */

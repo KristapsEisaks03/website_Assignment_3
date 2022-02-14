@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/MainStyle.css">
+    <link rel="shortcut icon" href="_img/MainTabLogo.png" type="image/x-icon">
+    <title>KE - Assignment 3</title>
+    
+</head>
+<body>
+
+    <div id="Picture_Fullscreen" onclick="Picture_Close()">
+        <p>Click again to minimize!</p>
+    </div>
+
+    <!-- NAVIGATION START -->
+    <div class="Header">
+        <div class="H_Pic"></div>
+        <div class="H_Navigation">
+            <button style="color:red;" onclick="location.href='Index.html'">Home</button>
+            <button onclick="location.href='HtcVive.html'">HTC</button>
+            <button onclick="location.href='Oculus.html'">Oculus</button>
+            <button onclick="location.href='Valve Index.html'">Valve</button>
+            <button onclick="location.href='Mixed Reality.html'">Mixed Reality</button>
+        </div>
+        <div class="Block">
+        </div>
+    </div>
+
+
+    <!-- NAVIGATION END -->
+
+
+    <script src="_js/Index.js">
+    </script>
+    <div class="mainBody">
+        <h1 class="rainbow_text_animated">VR Headsets</h1>
+        <p>This webpage is made to list through the web pages and show advantages and disadvantages of each Headset
+            also showing an overview of them and specs.<br>
+            This also includes with recommendations and best cases and scenarios which one should you buy.
+        </p>
+        <br>
+        <div class="FlexBox_Property">
+            <div>
+                VR as the technology came from being really low and not interesting as for Headset
+                you had to make it stationary but now as technology has come really far. Now adays you are able to immersive yourself 
+                in the virtual world and experience new things.<br>
+                <br>You can now immerse yourself in world which is flooded with combines and you are on a mission to take down Combine weapon named Vault. (Game name Half Life Alyx)<br>
+
+            </div>
+            <div  onclick="Picture_Open('_img/_index/halflife_alyx_11.jpg')" id ="PictureDiv_Class_V1"class="PictureDiv_Class" style="background-image: url('_img/_index/halflife_alyx_11.jpg');">
+                <div id="LabelToShow_1" style="display: none;">Press on picture to open on full screen</div>
+            </div>
+
+            <div onclick="Picture_Open('_img/_index/Vrchat_Pic.png')"style="background-image:url('_img/_index/Vrchat_Pic.png');" class="PictureDiv_Class" id ="PictureDiv_Class_V2">
+                <div id="LabelToShow_2" style="display: none;">Press on picture to open on full screen</div>
+            </div>
+
+            <div>
+                As VR goes further in advancement, you are even able to talk to people from different world locations and have fun with them.<br>
+                Game that lets you do this is VRChat which is a socialable game and had many positive feedbacks on the person itself and also having fun.<br>
+                Benefits that VrChat gave to people are:
+                <ul>
+                    <li>Confidence</li>
+                    <li>Boosting Social skills</li>
+                    <li>Positivity</li>
+                </ul>
+                This is all due to fact people don't judge you who you are and you are free to speak or do whatever you want!
+            </div>
+        </div>
+        <!--THIS IS FOR THE WHITE PART WHICH IS THE NEXT SECTION--> 
+
+    </div>
+    <br><br>
+    <div class="mainBody" style="background-color:#333333 ;">
+        <br>
+        <div class="FlexBox_Property">
+            <div >If you are a person that likes more combat and action then Blade and Sorcerry is the best game for you as you are a warrior who fights through 
+                different waves of attacks. The game is itself a sandbox but it comes with many mods and any time release of new dungeon levels would be released to the game
+                which will make it even more fun and rewarding to play, so for now you can immersive yourself in fights with any number of battles and with different difficulties!
+            </div>
+            <div onclick="Picture_Open('_img/_index/blade-and-sorcery-melee-bridge-mountains.jpg')" id = "PictureDiv_Class_V3"class="PictureDiv_Class" style="background-image: url('_img/_index/blade-and-sorcery-melee-bridge-mountains.jpg');">
+                <div id="LabelToShow_3" style="display: none;">Press on picture to open on full screen</div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!--WELL THIS IS A FOOTER SO YEAH A FOOTER XD-->
+    <div class="Footer">
+        <div>
+        Creator: Kristaps Eisaks, ID: 622172<br>
+        Contacts: kristapseisaks03@gmail.com<br>
+        </div>
+        <div>
+            References:<br><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a><br>
+            <a href="https://stackoverflow.com/" target="_blank">https://stackoverflow.com/</a><br>
+            <a href="https://google.com/" target="_blank">https://google.com/</a>
+        </div>
+       
+    </div>
+
+
+
+</body>
+</html>

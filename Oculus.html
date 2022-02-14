@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/MainStyle.css">
+    <link rel="shortcut icon" href="_img/MainTabLogo.png" type="image/x-icon">
+    <title>KE - Assignment 3</title>
+    
+</head>
+<body>
+
+
+    <div id="Picture_Fullscreen" onclick="Picture_Close()">
+        <p>Click again to minimize!</p>
+    </div>
+
+    <!-- NAVIGATION START -->
+    <div class="Header">
+        <div class="H_Pic"></div>
+        <div class="H_Navigation">
+            <button onclick="location.href='Index.html'">Home</button>
+            <button onclick="location.href='HtcVive.html'">HTC</button>
+            <button  style="color:red;" onclick="location.href='Oculus.html'">Oculus</button>
+            <button onclick="location.href='Valve Index.html'">Valve</button>
+            <button onclick="location.href='Mixed Reality.html'">Mixed Reality</button>
+        </div>
+        <div class="Block">
+        </div>
+    </div>
+
+
+    <!-- NAVIGATION END -->
+
+
+    <script src="_js/Index.js">
+    </script>
+
+    <div class="mainBody">
+        <h1 class="rainbow_text_animated">Oculus</h1>
+        <p>
+            
+        </p>
+        <br>
+
+        <h1 style="font-size: 5vh;" class="rainbow_text_animated">HTC Vive Headset</h1>
+        <div class="FlexBox_Property">
+            <div>
+                HTC Vive was the greatest headset to have as it had in its time of launch best vr experience and good controllers to play vr games with and having the best and user friendlies base station setup which costed £799.<br>
+                £200 more than the rift headset but did offer premium experience at its time.<br><br>
+                Most people would go for this headset at 2021 due to its current cheap price as there are now more headset that offer better performance and experience for VR, so price you may see about £200 or £300 or even cheaper if you are lucky. 
+            </div>
+            <div  onclick="Picture_Open('_img/_htc/htc-vive-product-1.jpg')" id ="PictureDiv_Class_V1"class="PictureDiv_Class" style="background-image: url('_img/_htc/htc-vive-product-1.jpg');">
+                <div id="LabelToShow_1" style="display: none;color: black;">Press on picture to open on full screen</div>
+            </div>
+            <h1 class="rainbow_text_animated Sub_Title_H1">Advantages and Disadvantages</h1>
+            <div>
+                <h2 style="text-align: center;">Advantages:</h2>
+                <ul>
+                    <li>Best For Roomscale VR</li>
+                    <li>Has wireless options</li>
+                    <li>Intuitive controls</li>
+                    <li>Software partnership with Valve</li>
+                </ul>
+            </div>
+            <div >
+                <h2 style="text-align: center;">Disadvantages:</h2>
+                <ul>
+                    <li>Still bit pricey</li>
+                    <li>Requires high end GPU</li>
+                    <li>Less Comfortable compared to its competitors</li>
+                    <li>Use of base station 1.0 tracking could be laggy sometimes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--THIS IS FOR THE WHITE PART FOR VIVE PRO HEADSET-->
+
+    <div class="mainBody" style="background-color: white;">
+        <br>
+        <h1 style="font-size: 5vh;" class="rainbow_text_animated">HTC Vive Pro Headset</h1>
+        <div class="FlexBox_Property" style="color:black;">
+            <div style="color:black;">
+                Vive Pro is an upgrade from the original Vive headset. It comes with built in headphones which provided much better quality of sound and uses newest 2.0 Base stations which come with improvement in FOV and with higher accuracy.<br><br>
+                Comfort has also been upgraded so overall it is a high budget and premium headset but issue that is with this headset is the upgrade comparing to old HTC vive are little and looking by the price of around £800 or even £1000 and looking by upgrades and the price it is more worth it of buying old HTC Vive (Unless you want 2.0 Base Stations).<br>
+            </div>
+            <div  onclick="Picture_Open('_img/_htc/vive-pro_full-set3840x2240.jpg')" id ="PictureDiv_Class_V2"class="PictureDiv_Class" style="background-image: url('_img/_htc/vive-pro_full-set3840x2240.jpg');">
+                <div id="LabelToShow_2" style="display: none;color:black;">Press on picture to open on full screen</div>
+            </div>
+            <h1 class="rainbow_text_animated Sub_Title_H1">Advantages and Disadvantages</h1>
+            <div style="color:black;">
+                <h2 style="text-align: center;">Advantages:</h2>
+                <ul>
+                    <li>Best For Roomscale VR</li>
+                    <li>Has wireless options</li>
+                    <li>Improved visual fidelity</li>
+                    <li>Software partnership with Valve</li>
+                    <li>Built-in headphones</li>
+                    <li>Reliable</li>
+                    <li>Uses 2.0 Base stations which are way more accurate and have higher FOV</li>
+                </ul>
+            </div>
+            <div style="color:black;">
+                <h2 style="text-align: center;">Disadvantages:</h2>
+                <ul>
+                    <li>Price isn’t absolutely justified</li>
+                    <li>Requires high end GPU</li>
+                    <li>Valve competitor has better price for features</li>
+                    <li>Still uses 90Hz Screen even when Quest 2 has 120Hz</li>
+                    <li>Still uses out dated controllers that are not better comparing to other competitors such as Oculus and Valve</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--THIS IS FOR THE WHITE PART FOR VIVE COSMOS HEADSET-->
+    <div class="mainBody">
+
+        <h1 style="font-size: 5vh;" class="rainbow_text_animated">HTC Vive Cosmos Headset</h1>
+        <div class="FlexBox_Property">
+            <div>
+                HTC Vive Cosmos is the first headset from HTC that does not uses external lighthouses but uses inside out tracking meaning every movement and location is tracking by the headset itself using cameras on the outside of the headset.<br>
+                But controllers that are with Cosmos are quite bulky and also are tracked using light which is not ideal meaning you would have lower precision of tracking comparing to Oculus. At launch it had issues with tracking in way that you could not 
+                play games normally which destroyed the experience but after a year they have completely fixed the issue but it has no way of tracking your hands behind as there is no AI that does that for you like in Oculus.<br>
+                Price of the headset is around £699 which is quite expensive.
+            </div>
+            <div onclick="Picture_Open('_img/_htc/HTC_Vive_Cosmos.png')" id ="PictureDiv_Class_V3"class="PictureDiv_Class" style="background-image: url('_img/_htc/HTC_Vive_Cosmos.png');">
+                <div id="LabelToShow_3" style="display: none;">Press on picture to open on full screen</div>
+            </div>
+            <h1 class="rainbow_text_animated Sub_Title_H1">Advantages and Disadvantages</h1>
+            <div>
+                <h2 style="text-align: center;">Advantages:</h2>
+                <ul>
+                    <li>Doesn't require external Base Stations (Optional)</li>
+                    <li>Has wireless options</li>
+                    <li>Sharp display</li>
+                    <li>Large software library with Viveport and SteamVR.</li>
+                    <li>Inside Out tracking</li>
+                    <li>Has flip up headset design</li>
+                </ul>
+            </div>
+            <div >
+                <h2 style="text-align: center;">Disadvantages:</h2>
+                <ul>
+                    <li>Expensive</li>
+                    <li>Bulky Controllers</li>
+                    <li>Screen sweet spot is low due to flip up headset design</li>
+                    <li>Have tracking issues when headset does not sees controllers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--WELL THIS IS A FOOTER SO YEAH A FOOTER XD-->
+    <div class="Footer">
+        <div>
+        Creator: Kristaps Eisaks, ID: 622172<br>
+        Contacts: kristapseisaks03@gmail.com<br>
+        </div>
+        <div>
+            References:<br><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a><br>
+            <a href="https://stackoverflow.com/" target="_blank">https://stackoverflow.com/</a><br>
+            <a href="https://google.com/" target="_blank">https://google.com/</a>
+        </div>
+       
+    </div>
+
+
+
+</body>
+</html>
